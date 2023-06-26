@@ -12,7 +12,7 @@ function App() {
         e.preventDefault();
         try {
             const response = await axios.get(
-                `https://api.unsplash.com/photos/random?client_id=0by61bfgkaLu9c4X0SjHiitiwKZzsAEksOB1kP5XNjw&query=${query}`
+                `https://api.unsplash.com/photos/random?client_id={PUT_YOUR_CLIENT_ID_HERE}jw&query=${query}`
             );
 
             const image = response.data.urls.regular;
